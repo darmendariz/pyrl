@@ -1,0 +1,177 @@
+--------------------------------------------------
+Probe, path is (parsing) -> body, into is None
+Container: 
+    body_size = 1766698
+    body_crc = 2667800256
+    list_of_levels = ListContainer: 
+        Container: 
+            size = 16
+            content = u'CHN_Stadium_SFX' (total 15)
+        Container: 
+            size = 16
+            content = u'CHN_Stadium_OOB' (total 15)
+        Container: 
+            size = 16
+            content = u'CHN_Stadium_VFX' (total 15)
+        Container: 
+            size = 26
+            content = u'CHN_Stadium_OOB_Mountains' (total 25)
+        Container: 
+            size = 18
+            content = u'CHN_Stadium_Field' (total 17)
+    list_of_keyframes = ListContainer: 
+        Container: 
+            time = 18.88384246826172
+            frame = 0
+            position = 0
+        Container: 
+            time = 28.91012954711914
+            frame = 299
+            position = 268493
+        Container: 
+            time = 38.92729187011719
+            frame = 599
+            position = 682261
+        Container: 
+            time = 48.94353485107422
+            frame = 898
+            position = 1092990
+        Container: 
+            time = 58.974830627441406
+            frame = 1199
+            position = 1507939
+        Container: 
+            time = 69.0079574584961
+            frame = 1500
+            position = 1921640
+        Container: 
+            time = 79.04106903076172
+            frame = 1801
+            position = 2341545
+        Container: 
+            time = 89.07386016845703
+            frame = 2102
+            position = 2754337
+        Container: 
+            time = 99.08586120605469
+            frame = 2402
+            position = 3157842
+        Container: 
+            time = 117.51746368408203
+            frame = 2681
+            position = 3537830
+        Container: 
+            time = 127.52581024169922
+            frame = 2980
+            position = 3814833
+        Container: 
+            time = 137.53550720214844
+            frame = 3279
+            position = 4229099
+        Container: 
+            time = 147.53880310058594
+            frame = 3579
+            position = 4640648
+        Container: 
+            time = 157.5441131591797
+            frame = 3879
+            position = 5056707
+        Container: 
+            time = 167.54653930664062
+            frame = 4176
+            position = 5469335
+        Container: 
+            time = 185.46534729003906
+            frame = 4440
+            position = 5830892
+        Container: 
+            time = 195.4774932861328
+            frame = 4733
+            position = 6112672
+        Container: 
+            time = 205.49099731445312
+            frame = 5031
+            position = 6534893
+        Container: 
+            time = 215.49673461914062
+            frame = 5331
+            position = 6937194
+        Container: 
+            time = 225.49691772460938
+            frame = 5631
+            position = 7352032
+        Container: 
+            time = 235.49868774414062
+            frame = 5931
+            position = 7763361
+        Container: 
+            time = 245.49989318847656
+            frame = 6230
+            position = 8181775
+        Container: 
+            time = 255.5025634765625
+            frame = 6528
+            position = 8588993
+        Container: 
+            time = 265.52667236328125
+            frame = 6827
+            position = 9005971
+        Container: 
+            time = 281.1692810058594
+            frame = 7024
+            position = 9283644
+        Container: 
+            time = 291.18206787109375
+            frame = 7323
+            position = 9551483
+        Container: 
+            time = 301.1947937011719
+            frame = 7621
+            position = 9968090
+        Container: 
+            time = 311.2280578613281
+            frame = 7918
+            position = 10382151
+        Container: 
+            time = 321.2344665527344
+            frame = 8217
+            position = 10797726
+        Container: 
+            time = 331.23858642578125
+            frame = 8516
+            position = 11210500
+        Container: 
+            time = 347.9765319824219
+            frame = 8746
+            position = 11512522
+        Container: 
+            time = 357.9845886230469
+            frame = 9043
+            position = 11792516
+        Container: 
+            time = 367.994384765625
+            frame = 9342
+            position = 12206886
+        Container: 
+            time = 378.0014953613281
+            frame = 9638
+            position = 12615180
+        Container: 
+            time = 388.0306091308594
+            frame = 9937
+            position = 13029018
+        Container: 
+            time = 398.66156005859375
+            frame = 9983
+            position = 13134609
+        Container: 
+            time = 408.6762390136719
+            frame = 10279
+            position = 13413985
+        Container: 
+            time = 418.6784973144531
+            frame = 10577
+            position = 13823182
+    network_stream_size = 1735680
+    current = 1741638
+--------------------------------------------------
