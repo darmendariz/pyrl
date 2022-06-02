@@ -10,6 +10,7 @@ Replay file format documented at:
 
 from construct import *
 from construct import Int8sl, Int32ul, Int32sl, Int64sl, Float32l
+import os
 
 '''
 ############ Strings #################
@@ -64,7 +65,7 @@ header_property_value_types['ArrayProperty'] = PrefixedArray(Int32ul, property_a
 End of key-value pair stuff. Now all the different types of key-value pairs listed in header_property_value_types can be read. 
 '''
 
-# Keyframe struct: (Time: 32bit float, Frame: 32bit int, Position: 32 bit int)
+# Keyframe struct: (Time: 32bit float, Frame: 32bit int, Position in file: 32 bit int)
 # Used in replay.body.list_of_keyframes
 keyframe = Struct(
     'time' / Float32l,
@@ -102,9 +103,9 @@ new_actor = BitStruct(
 network_frame = BitStruct(
     'absolute_frame_time' / Float32l,
     'delta_time' / Float32l,
-    'actor_data'/ RepeatUntil(
-        'more_actor_data' / Flag,
-    )
+    #'actor_data'/ RepeatUntil(
+    #    'more_actor_data' / Flag,
+    #)
 )
 '''
 End of network frame stuff. 
@@ -175,5 +176,11 @@ replay = Struct(
 )
 
 
-with open('/Users/david/pyrl/replays/raw/3ff45d3a-3333-4bb7-8df3-8339da0433d4.replay', 'rb') as f:
-    replay.parse_stream(f)
+replay_directory = '/Users/david/pyrl/replays/'
+output_directory = '/Users/david/pyrl/output/'
+
+for f in os.listdir(replay_directory):
+    outputfile = output_directory + f.replace('.replay', '.txt')
+    filename = os.path.join(replay_directory, f)
+    with open(filename,'rb') as replayfile, open(outputfile, 'w') as parser_output:
+        parser_output.write(str(replay.parse_stream(replayfile)))
